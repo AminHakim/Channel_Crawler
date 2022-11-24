@@ -5,7 +5,7 @@ from selenium.webdriver.chrome.service import Service
 import pandas as pd
 
 #open target website with webdriver
-website = 'https://channelcrawler.com/users/login'
+website = 'https://channelcrawler.com/eng/results2/1102862/page:1'
 path = '\Python310\Chromedriver'
 driver = webdriver.Chrome(executable_path=r'C:\Python310\Chromedriver\chromedriver.exe')
 driver.get(website)
@@ -24,30 +24,33 @@ Creation_Date = []
 time.sleep(1)
 
 #fill linkedin username and password
-username = ""
-password = ""
+#username = "liontroopergeneral@gmail.com"
+#password = "L1oNG3nErAL2846!"
 
 #automated fill in username and password
-driver.find_element("xpath", '//*[@name="data[User][username]"]').send_keys(username)
-driver.find_element("xpath", '//*[@name="data[User][password]"]').send_keys(password)
+#driver.find_element("xpath", '//*[@name="data[User][username]"]').send_keys(username)
+#driver.find_element("xpath", '//*[@name="data[User][password]"]').send_keys(password)
 
 #wait before click login
-time.sleep(1)
+#time.sleep(1)
 
 #click to log in
-click_submit = driver.find_element("xpath", '//*[@class="submitbutton btn btn-primary btn-lg"]').click()
+#click_submit = driver.find_element("xpath", '//*[@class="submitbutton btn btn-primary btn-lg"]').click()
 
 #wait
 time.sleep(1)
 
+
+
+
 #main loop
 #change value at 'while z' for number of pages
 z = 0
-while z < 5:
+while z < 1:
     z += 1
 
 #going to intial scraping page
-    initial_page = 'https://channelcrawler.com/eng/results2/1063423/page:' + str(z)
+    initial_page = 'https://channelcrawler.com/eng/results2/1102862/page:' + str(z)
     driver.get(initial_page)
 
 # ait
