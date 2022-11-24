@@ -23,19 +23,19 @@ Creation_Date = []
 #wait before click sign in
 time.sleep(1)
 
-#fill linkedin username and password
-#username = "liontroopergeneral@gmail.com"
-#password = "L1oNG3nErAL2846!"
+fill linkedin username and password
+username = "liontroopergeneral@gmail.com"
+password = "L1oNG3nErAL2846!"
 
-#automated fill in username and password
-#driver.find_element("xpath", '//*[@name="data[User][username]"]').send_keys(username)
-#driver.find_element("xpath", '//*[@name="data[User][password]"]').send_keys(password)
+automated fill in username and password
+driver.find_element("xpath", '//*[@name="data[User][username]"]').send_keys(username)
+driver.find_element("xpath", '//*[@name="data[User][password]"]').send_keys(password)
 
-#wait before click login
-#time.sleep(1)
+wait before click login
+time.sleep(1)
 
-#click to log in
-#click_submit = driver.find_element("xpath", '//*[@class="submitbutton btn btn-primary btn-lg"]').click()
+click to log in
+click_submit = driver.find_element("xpath", '//*[@class="submitbutton btn btn-primary btn-lg"]').click()
 
 #wait
 time.sleep(1)
